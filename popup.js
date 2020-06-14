@@ -1,5 +1,6 @@
 let showUrls = document.getElementById('showUrls');
 let copiedUrls = document.getElementById('copiedUrls');
+let copyUrls = document.getElementById('copyUrls');
 
 showUrls.onclick = function(element) {
     // console.log('hello from popup');
@@ -14,10 +15,12 @@ showUrls.onclick = function(element) {
         // alert(urls);
         
         copiedUrls.value = urls;
+        var buttonText = copyUrls.innerText;
+        buttonText += "(" + tabs.length + ")";
+        // alert(buttonText);
+        copyUrls.innerText = buttonText;
     });
 };
-
-let copyUrls = document.getElementById('copyUrls');
 
 copyUrls.onclick = function(element) {
     copiedUrls.select();
