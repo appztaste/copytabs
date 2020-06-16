@@ -10,13 +10,20 @@
     </style>
   </head>
   <body>
-    <button id="showUrls">Show URLs</button>
-    <h3>URLs will appear below</h3>
-    <hr/>
-    <button id="copyUrls">Copy URLs</button>
-    <div>
-        <textarea id="copiedUrls" style="width: 400px;height:200px"></textarea>
+    <button id="fetchUrls" style="display: none;">Fetch URLs</button>
+    <button id="fetchNCopyUrls">Fetch &amp; Copy URLs</button>
+    <button id="fetchNCopyUrlsNTitles">Fetch &amp; Copy URLs &amp; titles</button>
+    <button id="fetchNCopyThisUrl">Fetch &amp; Copy this URL</button>
+    <button id="fetchNCopyThisUrlNTitle">Fetch &amp; Copy this URL &amp; title</button>
+    <div style="display:block;">
+      <h3>URLs will appear below</h3>
+      <hr/>
+      <button id="copyUrls">Copy URLs</button>
+      <div>
+          <textarea id="copiedUrls" style="width: 400px;height:200px"></textarea>
+      </div>
     </div>
+    <div id="status"/>
     <script src="popup.js"></script>
   </body>
 </html>
