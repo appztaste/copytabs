@@ -1,2 +1,2 @@
 # copytabs
-simple chrome extension to copy open tabs urls
+simple chrome extension to copy open tabs urls.
